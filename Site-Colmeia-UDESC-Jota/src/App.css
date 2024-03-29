@@ -1,0 +1,16 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Home_Activities_Card{
+  width: 50%;
+}
+#image{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../images/time.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
