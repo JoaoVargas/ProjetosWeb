@@ -1,0 +1,39 @@
+.project-star {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 5vh 5vw;
+  gap: 2rem;
+
+  min-width: 600px;
+  min-height: 600px;
+}
+
+.project-star-title {
+  display: flex;
+  justify-content: center;
+}
+
+.container-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 2rem;
+  gap: 1rem;
+
+  border-radius: 2rem;
+
+  background-color: var(--paleta-4);
+}
+
+.active {
+  color: var(--paleta-1);
+}
+.inactive {
+  color: var(--paleta-3);
+}

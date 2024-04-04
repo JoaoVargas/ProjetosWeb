@@ -1,0 +1,30 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --paleta-1: #f2e9e4;
+  --paleta-2: #c9ada7;
+  --paleta-3: #9a8c98;
+  --paleta-4: #4a4e69;
+  --paleta-5: #22223b;
+  
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  color: var(--paleta-1);
+  background-color: var(--paleta-5);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,html{
+  height:100%;
+}
