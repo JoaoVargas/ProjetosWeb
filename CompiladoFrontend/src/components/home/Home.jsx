@@ -4,6 +4,9 @@ import Acordiao from '../acordiao/Acordiao'
 import ColorGenerator from '../colorGenerator/ColorGenerator';
 import StarRating from '../starRating/StarRating';
 import ImageSlider from '../imageSlider/ImageSlider';
+import LoadMore from '../loadMore/LoadMore';
+import TreeView from '../treeView/TreeView';
+import menus from '../treeView/data';
 
 function Home() {
 
@@ -17,8 +20,10 @@ function Home() {
       <ImageSlider 
         url={'https://picsum.photos/v2/list'} 
         page={3} 
-        limit={5}
+        limit={15}
         />
+      <LoadMore />
+      <TreeView menus={menus}/>
     </main>
   );
 }
