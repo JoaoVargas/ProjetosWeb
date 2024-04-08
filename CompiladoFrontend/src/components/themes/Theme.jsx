@@ -12,7 +12,7 @@ const Theme = () => {
   return (
     <div className="project-theme" data-theme={theme}>
       <div className='project-theme-title'>
-        <h1>Qr Generator</h1>
+        <h1>Theme Toggler</h1>
       </div>
       <div className="container-theme">
         <button
