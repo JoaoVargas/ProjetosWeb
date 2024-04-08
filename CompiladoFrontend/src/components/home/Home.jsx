@@ -7,6 +7,7 @@ import ImageSlider from '../imageSlider/ImageSlider';
 import LoadMore from '../loadMore/LoadMore';
 import TreeView from '../treeView/TreeView';
 import menus from '../treeView/data';
+import QrGenerator from '../qrGenerator/QrGenerator';
 
 function Home() {
 
@@ -24,6 +25,7 @@ function Home() {
         />
       <LoadMore />
       <TreeView menus={menus}/>
+      <QrGenerator />
     </main>
   );
 }

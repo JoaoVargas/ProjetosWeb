@@ -19,6 +19,10 @@ export const menus = [
                 label: "City",
                 to: "city",
               },
+              {
+                label: "City2",
+                to: "city2",
+              },
             ],
           },
         ],

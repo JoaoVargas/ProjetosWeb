@@ -3,7 +3,7 @@ import MenuItem from "./MenuItem";
 
 const MenuList = ({list = []}) => {
   return (
-    <div className="menu-list-treeview">
+    <ul className="menu-list-treeview">
       {
         list && list.length
         ?
@@ -13,7 +13,7 @@ const MenuList = ({list = []}) => {
         :
           null
       }
-    </div>
+    </ul>
   );
 }
 

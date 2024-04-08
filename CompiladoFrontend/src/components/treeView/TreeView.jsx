@@ -1,5 +1,4 @@
 import './TreeView.css'
-import data from './data';
 import MenuList from './MenuList';
 
 const TreeView = ({menus = []}) => {

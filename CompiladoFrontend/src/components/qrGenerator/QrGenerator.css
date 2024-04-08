@@ -1,4 +1,4 @@
-.project-treeview {
+.project-qrgenerator {
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -9,18 +9,18 @@
   padding: 5vh 5vw;
   gap: 2rem;
 
-  /* min-width: 600px;
-  min-height: 600px; */
+  min-width: 600px;
+  min-height: 600px;
   min-width: 100%;
   min-height: 100%;
 }
 
-.project-treeview-title {
+.project-qrgenerator-title {
   display: flex;
   justify-content: center;
 }
 
-.container-treeview {
+.container-qrgenerator {
   display: flex;
   flex-direction: column;
 
@@ -32,18 +32,4 @@
   background-color: var(--paleta-4);
   max-height: 100%;
   height: 100%;
-  width: 30%;
-}
-
-.menu-list-treeview{
-  list-style-type: none;
-  padding-left: 1rem;
-}
-
-.menu-item-treeview {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 1rem;
-  gap: 0.5rem;
 }
