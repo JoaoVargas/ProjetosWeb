@@ -3,7 +3,7 @@
   flex-direction:column;
   justify-content: center;
 
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
 
   padding: 5vh 5vw;
@@ -32,4 +32,56 @@
   background-color: var(--paleta-4);
   max-height: 100%;
   height: 100%;
+
+
+  min-width: 600px;
+  min-height: 600px;
+}
+
+ button {
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 0px;
+  cursor: pointer;
+  font-weight:bold;
+
+  background-color: var(--paleta-2);
+  color: var(--paleta-5);
+  width: 100%;
+}
+button:hover {
+  background-color: var(--paleta-3);
+  color: var(--paleta-5);
+}
+button:active {
+  background-color: var(--paleta-5);
+  color: var(--paleta-1);
+}
+
+input{
+  width: 100%;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: var(--paleta-3);
+  color: var(--paleta-5);
+  border: 0px solid;
+  text-align: center;
+}
+
+.wrapper-input-qrgenerator {
+  display: flex;
+  gap: 1rem;
+}
+
+.wrapper-qrcode-qrgenerator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.qrcode-qrgenerator {
+  /* border: 1px solid; */
+  box-shadow: 0px 0px 0px 6px var(--paleta-1);
 }

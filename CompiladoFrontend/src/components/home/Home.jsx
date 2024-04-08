@@ -8,6 +8,7 @@ import LoadMore from '../loadMore/LoadMore';
 import TreeView from '../treeView/TreeView';
 import menus from '../treeView/data';
 import QrGenerator from '../qrGenerator/QrGenerator';
+import Theme from '../themes/Theme';
 
 function Home() {
 
@@ -26,6 +27,7 @@ function Home() {
       <LoadMore />
       <TreeView menus={menus}/>
       <QrGenerator />
+      <Theme />
     </main>
   );
 }

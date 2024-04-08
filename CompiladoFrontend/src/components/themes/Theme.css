@@ -1,0 +1,51 @@
+
+
+.project-theme {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  padding: 5vh 5vw;
+  gap: 2rem;
+  background-color: var(--paleta-5);
+  transition: all 0.5s;
+}
+
+.project-theme-title {
+  display: flex;
+  justify-content: center;
+  color: var(--paleta-1);
+}
+
+.container-theme {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 2rem;
+  gap: 1rem;
+
+  border-radius: 2rem;
+
+  background-color: var(--paleta-4);
+
+  margin: 0px 20vw;
+}
+
+[data-theme = 'dark'] {
+  --paleta-1: #f2e9e4;
+  --paleta-2: #c9ada7;
+  --paleta-3: #9a8c98;
+  --paleta-4: #4a4e69;
+  --paleta-5: #22223b;
+}
+
+[data-theme = 'light'] {
+  --paleta-5: #f2e9e4;
+  --paleta-4: #c9ada7;
+  --paleta-3: #9a8c98;
+  --paleta-2: #4a4e69;
+  --paleta-1: #22223b;
+}
