@@ -47,7 +47,7 @@ model Server {
   @@index([profileId])
 }
 
-enum MemberRole{
+enum MemberRole {
   ADMIN
   MODERATOR
   GUEST
