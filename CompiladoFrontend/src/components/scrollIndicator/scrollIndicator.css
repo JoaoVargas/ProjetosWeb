@@ -1,0 +1,55 @@
+.project-scroll {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 5vh 5vw;
+  gap: 2rem;
+  background-color: var(--paleta-5);
+  transition: all 0.5s;
+}
+
+.project-scroll-title {
+  display: flex;
+  justify-content: center;
+  color: var(--paleta-1);
+}
+
+.container-scroll {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem 2rem;
+  gap: 1rem;
+
+  border-radius: 2rem;
+
+  background-color: var(--paleta-4);
+
+  margin: 0px 20vw;
+}
+
+.item-lista-scroll {
+  border: 1px solid var(--paleta-2);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+.item-lista-scroll p{
+  text-align: left;
+}
+
+.scrollbar-scroll {
+  display: flex;
+  width: 0%;
+  height: 2px;
+
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  background-color: var(--paleta-2);
+}

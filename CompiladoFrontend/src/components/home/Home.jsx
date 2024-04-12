@@ -9,6 +9,7 @@ import TreeView from '../treeView/TreeView';
 import menus from '../treeView/data';
 import QrGenerator from '../qrGenerator/QrGenerator';
 import Theme from '../themes/Theme';
+import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
 
 function Home() {
 
@@ -28,6 +29,7 @@ function Home() {
       <TreeView menus={menus}/>
       <QrGenerator />
       <Theme />
+      <ScrollIndicator url={'https://dummyjson.com/products?limit=20'} />
     </main>
   );
 }
