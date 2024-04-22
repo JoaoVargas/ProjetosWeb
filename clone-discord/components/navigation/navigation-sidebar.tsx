@@ -31,7 +31,7 @@ const NavigationSidebar = async () => {
 
 
   return ( 
-    <div className="space-y-4 flex flex-col items-center h-full text-primary w-full py-3 bg-secondary rounded-r-lg shadow-lg">
+    <div className="space-y-4 flex flex-col items-center h-full text-primary w-full py-3 bg-secondary rounded-lg shadow-lg">
         <NavigationAction />
         <Separator className="h-[2px] bg-black/25 rounded-lg w-10 mx-auto" />
         <ScrollArea className="flex h-full w-full">
@@ -54,15 +54,15 @@ const NavigationSidebar = async () => {
           afterSignOutUrl="/"
           appearance={{
             elements: {
-              rootBox: '',
-              avatarBox: 'h-[48px] w-[48px] rounded-lg',
+              rootBox: 'hover:h-[49px] hover:w-[49px] transition-all',
+              avatarBox: 'h-[48px] w-[48px] hover:h-[49px] hover:w-[49px] rounded-lg group-hover:my-2',
               userButtonPopoverCard: 'bg-background text-foreground rounded-lg border shadow-md',
               userPreviewSecondaryIdentifier: 'text-foreground',
               userButtonPopoverActionButton: 'hover:bg-secondary',
               userButtonPopoverActionButtonText: 'text-foreground',
               userButtonPopoverActionButtonIcon: 'text-foreground',
               userButtonPopoverFooter: 'hidden',
-              userButtonTrigger: 'h-[48px] w-[48px] rounded-lg focus:outline focus:shadow-none'
+              userButtonTrigger: 'h-[48px] w-[48px] hover:h-[49px] hover:w-[49px] rounded-lg focus:outline focus:shadow-none' 
             }
           }}/>
         </div>

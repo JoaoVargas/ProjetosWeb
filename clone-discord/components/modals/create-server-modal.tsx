@@ -5,7 +5,6 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import axios from 'axios';
 
 import { useForm } from 'react-hook-form';
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { 
@@ -30,6 +29,8 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from '@/components/mode-toggle';
 import FileUpload from '@/components/file-upload';
 
+import { useModal } from '@/hooks/use-modal-store';
+
 const formSchema = z.object({
   name: z.string().min(1, {
     message: 'É obrigatório dar um nome para a Guilda.'
@@ -39,14 +40,11 @@ const formSchema = z.object({
   })
 });
 
-const InitialModal = () => {
-  const [ isMounted, setIsMounted ] = useState(false);
-
+const CreateServerModal = () => {
+  const { isOpen, onCLose, type } = useModal();
   const router = useRouter();
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, [])
+  const isModalOpen = isOpen && type === 'createServer';
 
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -63,19 +61,19 @@ const InitialModal = () => {
       await axios.post('/api/servers', values);
       form.reset();
       router.refresh();
-      window.location.reload();
+      onCLose();
     } catch (error) {
-      console.log(error);
-      
+      console.log(error); 
     }
   }
 
-  if (!isMounted) {
-    return null;
+  const handleClose = () => {
+    form.reset();
+    onCLose();
   }
 
   return (
-    <Dialog open>
+    <Dialog open={isModalOpen} onOpenChange={handleClose}>
       <DialogContent className=' bg-secondary text-foreground p-0 overflow-hidden'>
         <DialogHeader className='pt-8 px-6'>
           <DialogTitle className='text-center text-2xl font-bold'>
@@ -138,4 +136,4 @@ const InitialModal = () => {
   );
 }
 
-export default InitialModal
+export default CreateServerModal
