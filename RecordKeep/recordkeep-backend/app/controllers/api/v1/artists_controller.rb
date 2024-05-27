@@ -1,7 +1,8 @@
 module Api
   module V1
     class ArtistsController < ApplicationController
-      before_action :set_artist, only: %i[ show update destroy ]
+      before_action :authorize_acess_request!, except: [:show, :index]
+      before_action :set_artist, only: [ :show, :update, :destroy ]
 
       # GET /artists
       def index
@@ -48,7 +49,7 @@ module Api
 
         # Only allow a list of trusted parameters through.
         def artist_params
-          params.require(:artist).permit(:name, :user_id)
+          params.require(:artist).permit(:name)
         end
     end
   end

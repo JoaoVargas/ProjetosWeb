@@ -9,6 +9,11 @@ Rails.application.routes.draw do
   end
 
   root to: "home#index"
+
+  post "refresh", controller: :refresh, action: :create
+  post "signin", controller: :signin, action: :create
+  post "signup", controller: :signup, action: :create
+  delete "signin", controller: :signin, action: :destroy
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
